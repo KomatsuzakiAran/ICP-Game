@@ -1,0 +1,135 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.auth-button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #00796b;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+
+.auth-button:hover {
+  background: #004d40;
+}
+
+.auth-button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+.game-container {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.game-container h2 {
+  color: #444;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100px;
+  margin: 0 0.5rem;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+button:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.result-section {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #333;
+  background: #e3f2fd;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-section p {
+  margin: 0;
+}
+
+.result-section p.correct {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.result-section p.incorrect {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.auth-prompt {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
